@@ -21,7 +21,7 @@ class UserInfoContainer extends Component {
         tweets: "10k",
         follow: "8k",
         followers: "12k",
-        followed: true,
+        followed: false,
         photo: photo
       }
     })
