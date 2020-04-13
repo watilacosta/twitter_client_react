@@ -2,12 +2,13 @@ import React from 'react'
 import { Row, Col } from 'react-materialize'
 
 import MainLayout from '../MainLayout'
+import UserInfoContainer from '../../containers/UserInfoContainer'
 
 const ProfilePage = () => (
   <MainLayout>
     <Row>
       <Col s={12} m={3}>
-        User Info
+        <UserInfoContainer />
       </Col>
       <Col s={12} m={6}>
         Tweet List
