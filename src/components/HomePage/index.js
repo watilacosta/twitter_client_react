@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import logo from "../../images/logo.png"
 import background from '../../images/background.png'
-
+import SignInContainer from '../../containers/Auth/SignInContainer'
 
 const HomePage = () => (
   <BackgroundBlue>
@@ -23,7 +23,7 @@ const HomePage = () => (
           </Row>
         </Col>
         <Col s={12} m={8} offset="m2 l2" l={4}>
-
+          <SignInContainer />
         </Col>
       </Row>
     </Container>
