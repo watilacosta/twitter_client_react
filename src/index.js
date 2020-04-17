@@ -3,18 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+import { Router } from "react-router";
 
-const Reducers = combineReducers({
-  trendings: () => ({ hashtags: [['#OneBitCode', '10k'], ['#RubyOnRails', '10k']] })
-})
-
-const Store = createStore(Reducers)
+import Store, { history } from './store'
 
 ReactDOM.render(
   <Provider store={Store}>
-    <App />
+    <Router history={history}>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
