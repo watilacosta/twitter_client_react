@@ -7,7 +7,7 @@ import RowNoBottomMargin from '../common/RowNoBottomMargin'
 const Hashtag = (props) => (
   <RowNoBottomMargin>
     <Col s={9}>
-      <a href="#">
+      <a href="#!">
         <BigTitle>{props.title}</BigTitle>
       </a>
     </Col>
